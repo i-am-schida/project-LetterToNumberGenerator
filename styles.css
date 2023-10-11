@@ -1,0 +1,43 @@
+/* Universal */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main */
+.container {
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+p {
+  margin: 15px 0px;
+  font-weight: bold;
+}
+
+.output-box {
+  max-width: 300px; /* Adjust the maximum width as needed */
+  overflow: auto;  /* Add horizontal scroll if text exceeds the width */
+  border: 1px solid #ccc; /* Add a border for the box */
+  padding: 10px; /* Add some padding for spacing */
+  white-space: nowrap; /* Prevent line breaks in the output */
+  margin: 0 auto; /* Center the .output-box */
+}
