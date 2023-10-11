@@ -13,11 +13,13 @@
     <div class="input-container">
       <div class="box">
         <label for="inputText">Enter your text:</label>
-        <textarea id="inputText" oninput="adjustHeight('inputText'); convertText()" placeholder="Enter your text"></textarea>
+        <button id="clearInputText" onclick="clearText('inputText')">Clear</button>
+        <textarea id="inputText" oninput="adjustHeight('inputText'); convertText()" placeholder="Hello world!" style="height: 165px;"></textarea>
       </div>
       <div class="box">
         <p>Converted Text:</p>
-        <textarea id="outputText" class="output-box" readonly disabled></textarea>
+        <button id="copyOutputText" onclick="copyText('outputText')">Copy</button>
+        <textarea id="outputText" class="output-box" readonly disabled placeholder="H3110 w0r1d!" style="height: 165px;"></textarea>
       </div>
     </div>
   </main>

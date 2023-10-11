@@ -39,6 +39,8 @@ main {
   min-height: 200px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -71,4 +73,17 @@ p {
   color: #FFD700;
   margin: 0;
   margin-bottom: 5px;
+}
+
+button {
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 50% / 100%;
+  border: none;
+}
+
+button:hover {
+  background-color: #728165;
+  color: white;
+  border: none;
 }
