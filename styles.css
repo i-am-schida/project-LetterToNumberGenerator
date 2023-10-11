@@ -1,6 +1,6 @@
-/* Universal */
 body {
-  font-family: Arial, sans-serif;
+  background-color: #6B8E23; 
+  font-family: 'Tahoma', sans-serif;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -9,35 +9,56 @@ body {
   margin: 0;
 }
 
-/* Main */
-.container {
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFD700;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+  max-width: 800px;
   margin: 20px auto;
-  max-width: 400px;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.box {
+  background-color: #FF69B4; 
+  border: 2px solid #D02090;
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 label {
   display: block;
   font-weight: bold;
-  margin-bottom: 15px;
+  color: #FFD700;
 }
 
-input[type="text"] {
-  width: 50%;
-  padding: 10px;
-  font-size: 16px;
+textarea {
+  width: 100%;
+  font-size: 18px;
+  resize: none;
+  overflow: hidden;
+  max-height: 100%;
+  border: 2px solid #FF6347;
+  border-radius: 5px;
+  background-color: #FFA07A;
+  color: #8B0000;
 }
 
 p {
-  margin: 15px 0px;
   font-weight: bold;
-}
-
-.output-box {
-  max-width: 300px; /* Adjust the maximum width as needed */
-  overflow: auto;  /* Add horizontal scroll if text exceeds the width */
-  border: 1px solid #ccc; /* Add a border for the box */
-  padding: 10px; /* Add some padding for spacing */
-  white-space: nowrap; /* Prevent line breaks in the output */
-  margin: 0 auto; /* Center the .output-box */
+  color: #FFD700;
+  margin: 0;
 }

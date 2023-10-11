@@ -9,12 +9,14 @@
 <body>
   <main>
     <h1>Letter-To-Number Generator</h1>
-    <div>
-      <label for="inputText">Enter your text:</label>
-      <input type="text" id="inputText" oninput="convertText()">
-      <p>Converted Text:</p>
-      <div class="output-box">
-        <span id="outputText"></span>
+    <div class="input-container">
+      <div class="box">
+        <label for="inputText">Enter your text:</label>
+        <textarea id="inputText" oninput="adjustHeight('inputText'); convertText()" placeholder="Enter your text"></textarea>
+      </div>
+      <div class="box">
+        <p>Converted Text:</p>
+        <textarea id="outputText" class="output-box" readonly disabled></textarea>
       </div>
     </div>
   </main>
