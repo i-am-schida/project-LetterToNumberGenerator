@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: calc(100vh - 100px);
   margin: 0;
 }
 
@@ -134,4 +134,37 @@ button:hover {
 .rules-container li {
   color: #ffcc00;
   margin: 5px 0; 
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+
+  gap: 10px;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 20px;
+  overflow: hidden;
+  border-top: 3px solid transparent;
+  animation: waveBorder 2s linear infinite alternate; /* use keyframe animation */
+}
+.footer a {
+  color: currentColor;
+}
+/* KEYFRAMES */
+@keyframes waveBorder {
+  0% {
+    border: none;
+    transform: translateY(3);
+    color: red;
+  }
+  100% {
+    border: none;
+    transform: translateY(-3px);
+    color: rgb(248, 228, 228);
+  }
 }
