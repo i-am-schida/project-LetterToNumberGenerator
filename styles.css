@@ -1,5 +1,5 @@
 body {
-  background-color: #030639;
+  background-color: #424242; 
   font-family: 'Tahoma', sans-serif;
   text-align: center;
   display: flex;
@@ -7,9 +7,6 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  /* background-image: url('/images/yellowflower.png');
-  background-position: center;
-  background-repeat: no-repeat; */
 }
 
 main {
@@ -19,7 +16,7 @@ main {
   background-color: #d5b597;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
 }
 
 .input-container {
@@ -32,7 +29,7 @@ main {
 
 .box {
   background-color: #bc3f40; 
-  border: 2px solid #728165;
+  border: 2px solid #ff6666;
   border-radius: 10px;
   padding: 20px;
   width: 50%;
@@ -41,14 +38,18 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); 
+}
+
+.box + .box {
+  margin-left: 20px;
 }
 
 label {
   display: block;
   font-weight: bold;
-  color: #FFD700;
-  margin-bottom: 5px;
+  color: #ffcc00; 
+  margin-bottom: 10px; 
 }
 
 textarea {
@@ -57,33 +58,80 @@ textarea {
   resize: none;
   overflow: hidden;
   max-height: 100%;
-  border: 2px solid #728165;
+  border: 2px solid #ff6666; 
   border-radius: 5px;
-  background-color: #8cc9dd;
-  color: #8B0000;
+  background-color: #ffdd99; 
+  color: black; 
 }
 
 h1 {
   margin: 0;
-  color: #3a2822;
+  color: black;
+  font-size: 28px; 
 }
 
 p {
   font-weight: bold;
-  color: #FFD700;
+  color: #ffcc00; 
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px; 
 }
 
 button {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   cursor: pointer;
   border-radius: 50% / 100%;
-  border: none;
+  background-color: #ffcc00; 
+  color: #ff6666; 
+  padding: 10px 20px; 
+  font-weight: bold;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border 0.3s;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 button:hover {
-  background-color: #728165;
-  color: white;
-  border: none;
+  background-color: #ff6666; 
+  border: 2px solid #ffcc00; 
+  color: #ffdd99; 
+}
+
+.rules-container {
+  max-width: 800px;
+  margin: 0px auto; 
+  background-color: #bc3f40;
+  border: 2px solid #ff6666;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.rules-container h2 {
+  color: black; 
+  font-size: 24px; 
+  margin: 0;
+  margin-bottom: 10px; 
+}
+
+.rules-container p {
+  color: #ffcc00; 
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.rules-container ul {
+  list-style-type: disc; 
+  margin-left: 20px; 
+  padding-left: 0; 
+}
+
+.rules-container li {
+  color: #ffcc00;
+  margin: 5px 0; 
 }

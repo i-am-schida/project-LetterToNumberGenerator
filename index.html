@@ -9,20 +9,35 @@
 </head>
 <body>
   <main>
-    <h1>Letter-To-Number Generator</h1>
+    <h1>🔠 Letter-To-Number Generator 🔢</h1>
     <div class="input-container">
-      <div class="box">
-        <label for="inputText">Enter your text:</label>
-        <button id="clearInputText" onclick="clearText('inputText')">Clear</button>
-        <textarea id="inputText" oninput="adjustHeight('inputText'); convertText()" placeholder="Hello world!" style="height: 165px;"></textarea>
-      </div>
-      <div class="box">
-        <p>Converted Text:</p>
-        <button id="copyOutputText" onclick="copyText('outputText')">Copy</button>
-        <textarea id="outputText" class="output-box" readonly disabled placeholder="H3110 w0r1d!" style="height: 165px;"></textarea>
-      </div>
+        <div class="box">
+            <label for="inputText">Enter your text:</label>
+            <button id="clearInputText" onclick="clearText('inputText')">Clear</button>
+            <textarea id="inputText" oninput="adjustHeight('inputText'); convertText()" placeholder="Hello world!" style="height: 165px;"></textarea>
+        </div>
+        <div class="box">
+            <p>Converted Text:</p>
+            <button id="copyOutputText" onclick="copyText('outputText')">Copy</button>
+            <textarea id="outputText" class="output-box" readonly disabled placeholder="H3110 w0r1d!" style="height: 165px;"></textarea>
+        </div>
     </div>
-  </main>
+    <div class="rules-container">
+        <h2>Here's how it works:</h2>
+        <p>Certain letters are replaced with an alternative character that resemebles it.</p>
+        <ul style="margin-top: 0px; margin-bottom: 0px;">
+            <li>'e' is replaced with '3'.</li>
+            <li>'a' is replaced with '4'.</li>
+            <li>'b' is replaced with '8'.</li>
+            <li>'o' is replaced with '0'.</li>
+            <li>'i' is replaced with '!'.</li>
+            <li>'f' is replaced with 'ph' or 'PH'.</li>
+            <li>'s' is replaced with '$' or '5' randomly.</li>
+            <li>'tfu' returns 'tfu', so 'stfu' returns '5tfu' or '$tfu'</li>
+            <li>"4 qu!ck 8r0wn ph0x jump$ 0v3r th3 l4zy d0g."</li>
+        </ul>
+    </div>
+</main>
   <script src="script.js"></script> <!-- JS -->
 </body>
 </html>
